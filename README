@@ -1,0 +1,48 @@
+= Yapopup
+
+==== A popup manager for Facebook applications
+
+Yapopup is a customzable tool for building popups inside Facebook FBML applications.
+
+It's Javascript and FBJS but you need to have YAPS to use it (YAPS is provided in sources).
+
+=== Targeted platforms
+
+We try to make our code usable on every platform. 
+For now, it has been tested only on : 
+
+* Mozilla Firefox 3.6
+* Apple Safari 4
+* Internet Explorer 6 et 7
+
+== Using Yapopup
+
+To use Yaps in your Facebook application, download the latest release of YAPS and Yapopup and copy the javascript files to a
+suitable location. Then include it in your HTML/FBML like this: 
+
+	<script src="/path/to/base.js"></script>
+	<script src="/path/to/yapopup.js"></script>
+
+Then instanciate a Yapopup class, providing wanted parameters, to get a popup. Like so :
+
+	<script type="text/javascript">
+		var yapopup = new Yapopup({content: 'Lorem ipsum dolor sit amet...', okButton: false, overlay: false});
+	</script>
+
+== Contributing to Yapopup
+
+Check out the Yapopup source with 
+
+	$ git clone git://github.com/meuble/yapopups.git
+	
+For now, we prefer that you fork the git repository and submit merge request.
+
+== Documentation
+
+Ther isn’t any Yapopup specific documentation. 
+
+You can dig the code to find what is possible to do with it.
+
+== License
+
+Yapopup is licensed under the terms of the WTFPL, see the included WTFPL-LICENSE file.
